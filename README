@@ -29,6 +29,9 @@
 | kills  |        |                   |                |
 | id     |        |                   |                |
 | team   |        |                   |                |
+| timer   |        |                   |                |
+| timer_pvp   |        |                   |                |
+| timer_final_battle   |        |                   |                |
 | alive_players   |0|count of players alive, sets to active players on started|started,death,revive|
 
 # Status
