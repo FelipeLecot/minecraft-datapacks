@@ -10,14 +10,14 @@
       "minecraft:gold_ingot"
     ],
     "A": [
-      "minecraft:apple"
+      "minecraft:golden_apple"
     ]
   },
   "result": {
     "id": "minecraft:golden_apple",
     "components": {
       "minecraft:custom_data": "{\"regen\": true}",
-      "minecraft:item_name": "Apple of Regen"
+      "minecraft:item_name": "Apple of Instant Health"
     }
   }
 }

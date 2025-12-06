@@ -1,1 +1,0 @@
-execute if score lecot started matches 1 run function uhc:start
