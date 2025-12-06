@@ -1,0 +1,1 @@
+advancement revoke @a only kitpvp:custom/eat_golden_head

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple",
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{head: true}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": "Golden Head",
+              "target": "item_name"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

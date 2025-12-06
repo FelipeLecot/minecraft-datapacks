@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      "minecraft:gold_block"
+    ],
+    [
+      "minecraft:melon"
+    ]
+  ],
+  "result": {
+    "id": "minecraft:glistering_melon_slice"
+  }
+}

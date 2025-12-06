@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "eat_golden_regen": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:golden_apple",
+          "components": {
+            "minecraft:custom_data": "{regen: true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "uhc:eat_golden_regen"
+  }
+}
