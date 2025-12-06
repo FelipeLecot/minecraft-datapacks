@@ -29,6 +29,7 @@
 | kills  |        |                   |                |
 | id     |        |                   |                |
 | team   |        |                   |                |
+| alive_players   |0|count of players alive, sets to active players on started|started,death,revive|
 
 # Status
 
@@ -38,4 +39,4 @@
 | no_pvp       | 1     | No pvp time for initial prep               | function start     |
 | pvp          | 2     | After x time pvp is enabled                | pvp_timer          |
 | final_battle | 3     | Shrinks                                    | timer              |
-| ended        | 4     |                                            | only 1 player left |
+| ended        | 4     |                                            | only 1 player left (alive_players = 1) |
