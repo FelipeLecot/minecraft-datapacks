@@ -5,4 +5,37 @@
 - [ ] Border shrink
 - [ ] Final heal and boost
 - [ ] Win detection
-- [ ] 
+- [ ] Configuration policies with binary encoding
+
+
+# Functions
+
+| function     | desc                                                                                                                                       | runs_on                   | condition |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------- | --------- |
+| waiting      | setea efectos y valors default de scoreboards para todos los players                                                                       | every tick                | status=0  |
+| start        | Hace los tps, armas los equipos random (if needed) reactiva las gamerules y limpia los scoreboards (jic) y setea el status a 1 (playing)   | trigger by admin to start |           |
+| setup        | gamerules para mantener el world estatico, worldborder y crea los scoreboards (triggers too)                                               | initial                   |           |
+| death        | Depende en el contador de muertes, cuando es 1 se setea a espectador y spawnea el loop (player head) y se setea el contador de muertes a 2 | everytick                 | dead=1    |
+| win          |                                                                                                                                            |                           |           |
+| final_battle |                                                                                                                                            |                           |           |
+| enable_pvp   |                                                                                                                                            |                           |           |
+
+# Scoreboards
+
+| name   | intial | description       | chanes_on      |
+| ------ | ------ | ----------------- | -------------- |
+| status | 0      | status scoreboard | function start |
+| dead   |        |                   |                |
+| kills  |        |                   |                |
+| id     |        |                   |                |
+| team   |        |                   |                |
+
+# Status
+
+| status       | value | description                                | changes_on         |
+| ------------ | ----- | ------------------------------------------ | ------------------ |
+| waiting      | 0     | Waiting for all palyers to be on and start | initial            |
+| no_pvp       | 1     | No pvp time for initial prep               | function start     |
+| pvp          | 2     | After x time pvp is enabled                | pvp_timer          |
+| final_battle | 3     | Shrinks                                    | timer              |
+| ended        | 4     |                                            | only 1 player left |
