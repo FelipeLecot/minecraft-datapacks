@@ -1,7 +1,6 @@
 {
   "values": [
     "uhc:death",
-    "uhc:waiting",
-    "uhc:revoke_advancements"
+    "uhc:waiting"
   ]
 }
