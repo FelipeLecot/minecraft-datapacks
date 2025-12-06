@@ -1,0 +1,7 @@
+{
+    "pack": {
+        "description": "Complementary ResourcePack for the UHC DataPack.",
+		"min_format": 69,
+        "max_format": 69
+    }
+}
