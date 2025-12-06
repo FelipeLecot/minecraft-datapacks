@@ -1,12 +1,14 @@
 # UHC
-- [ ] TP logic on start
-- [ ] Teams pre made or random or on meetup
+- [ ] Do not run setup every reload
+- [ ] TP logic on start (depends on teams)
+- [ ] Teams pre made or random or on meetup (difficult, push to later)
 - [ ] AFK for players
 - [ ] Border shrink
+- [ ] No pvp time
+- [ ] Timers on sidebar
 - [ ] Final heal and boost
 - [ ] Win detection
 - [ ] Configuration policies with binary encoding
-
 
 # Functions
 
@@ -22,24 +24,24 @@
 
 # Scoreboards
 
-| name   | intial | description       | chanes_on      |
-| ------ | ------ | ----------------- | -------------- |
-| status | 0      | status scoreboard | function start |
-| dead   |        |                   |                |
-| kills  |        |                   |                |
-| id     |        |                   |                |
-| team   |        |                   |                |
-| timer   |        |                   |                |
-| timer_pvp   |        |                   |                |
-| timer_final_battle   |        |                   |                |
-| alive_players   |0|count of players alive, sets to active players on started|started,death,revive|
+| name               | intial | description                                               | chanes_on            |
+| ------------------ | ------ | --------------------------------------------------------- | -------------------- |
+| status             | 0      | status scoreboard                                         | function start       |
+| dead               |        |                                                           |                      |
+| kills              |        |                                                           |                      |
+| id                 |        |                                                           |                      |
+| team               |        |                                                           |                      |
+| timer              |        |                                                           |                      |
+| timer_pvp          |        |                                                           |                      |
+| timer_final_battle |        |                                                           |                      |
+| alive_players      | 0      | count of players alive, sets to active players on started | started,death,revive |
 
 # Status
 
-| status       | value | description                                | changes_on         |
-| ------------ | ----- | ------------------------------------------ | ------------------ |
-| waiting      | 0     | Waiting for all palyers to be on and start | initial            |
-| no_pvp       | 1     | No pvp time for initial prep               | function start     |
-| pvp          | 2     | After x time pvp is enabled                | pvp_timer          |
-| final_battle | 3     | Shrinks                                    | timer              |
+| status       | value | description                                | changes_on                             |
+| ------------ | ----- | ------------------------------------------ | -------------------------------------- |
+| waiting      | 0     | Waiting for all palyers to be on and start | initial                                |
+| no_pvp       | 1     | No pvp time for initial prep               | function start                         |
+| pvp          | 2     | After x time pvp is enabled                | pvp_timer                              |
+| final_battle | 3     | Shrinks                                    | timer                                  |
 | ended        | 4     |                                            | only 1 player left (alive_players = 1) |
