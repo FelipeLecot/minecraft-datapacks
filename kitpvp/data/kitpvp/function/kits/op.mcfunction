@@ -12,7 +12,7 @@ give @s diamond_pickaxe[enchantments={efficiency:2}]
 give @s bow[enchantments={power:4}]
 
 # Shield
-give @s shield
+item replace entity @s weapon.offhand with shield
 
 # Crossbow
 give @s crossbow[enchantments={piercing:1}] 2
@@ -32,10 +32,10 @@ give @s golden_apple 8
 give @s cooked_beef 64
 
 # Armor
-give @s diamond_helmet[enchantments={protection:2}]
-give @s diamond_chestplate[enchantments={protection:2}]
-give @s diamond_leggings[enchantments={protection:2}]
-give @s diamond_boots[enchantments={protection:2}]
+item replace entity @s armor.head with diamond_helmet[enchantments={protection:2}]
+item replace entity @s armor.chest with diamond_chestplate[enchantments={protection:2}]
+item replace entity @s armor.legs with diamond_leggings[enchantments={protection:2}]
+item replace entity @s armor.feet with diamond_boots[enchantments={protection:2}]
 
 give @s splash_potion[potion_contents=strong_healing] 4
 give @s splash_potion[potion_contents=strong_strength] 2
