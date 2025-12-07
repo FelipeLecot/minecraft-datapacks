@@ -12,7 +12,7 @@ give @s iron_pickaxe[enchantments={efficiency:2}]
 give @s bow[enchantments={power:2}]
 
 # Shield
-give @s shield
+item replace entity @s weapon.offhand with shield
 
 # Crossbow
 give @s crossbow[enchantments={piercing:1}] 2
@@ -32,10 +32,10 @@ give @s golden_apple 4
 give @s cooked_beef 64
 
 # Armor
-give @s iron_helmet[enchantments={protection:2}]
-give @s iron_chestplate[enchantments={protection:2}]
-give @s iron_leggings[enchantments={protection:2}]
-give @s iron_boots[enchantments={protection:2}]
+item replace entity @s armor.head with iron_helmet[enchantments={protection:2}]
+item replace entity @s armor.chest with iron_chestplate[enchantments={protection:2}]
+item replace entity @s armor.legs with iron_leggings[enchantments={protection:2}]
+item replace entity @s armor.feet with iron_boots[enchantments={protection:2}]
 
 scoreboard players set @s kit 0
 scoreboard players set @s selecting 0
