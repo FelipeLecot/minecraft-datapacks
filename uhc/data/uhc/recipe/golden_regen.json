@@ -17,7 +17,8 @@
     "id": "minecraft:golden_apple",
     "components": {
       "minecraft:custom_data": "{\"regen\": true}",
-      "minecraft:item_name": "Apple of Instant Health"
+      "minecraft:item_name": "Apple of Instant Health",
+      "minecraft:item_model": "uhc:golden_apple_instant_health"
     }
   }
 }
